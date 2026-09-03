@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.*
+!.env.example
+cache/
+.DS_Store
+npm-debug.log*
+
+# Real bot configs stay private; only the example-*.json files are tracked.
+configs/*.json
+!configs/example-*.json

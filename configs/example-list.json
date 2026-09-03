@@ -1,0 +1,13 @@
+{
+  "name": "MyDirectoryBot",
+  "token_env": "MYDIRECTORYBOT_TOKEN",
+  "commands": ["card"],
+  "source": {
+    "type": "list",
+    "list": "https://example.com/list.json",
+    "images": "https://example.com/images/cards",
+    "refresh_minutes": 60
+  },
+  "reply": { "text": "https://example.com/card/{name}", "only_when_random": false },
+  "gif_as": "animation"
+}

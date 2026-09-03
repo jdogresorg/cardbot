@@ -1,0 +1,11 @@
+{
+  "name": "MyCardBot",
+  "token_env": "MYCARDBOT_TOKEN",
+  "commands": ["card", "c"],
+  "source": {
+    "type": "folder",
+    "path": "../cards"
+  },
+  "reply": { "text": "{name}", "only_when_random": true },
+  "gif_as": "animation"
+}

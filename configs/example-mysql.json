@@ -1,0 +1,14 @@
+{
+  "name": "MyDatabaseBot",
+  "token_env": "MYDATABASEBOT_TOKEN",
+  "commands": ["card"],
+  "source": {
+    "type": "mysql",
+    "dsn_env": "MYDATABASEBOT_DB_URL",
+    "query": "SELECT asset, image, series FROM cards WHERE status='Approved'",
+    "images": "https://example.com/images/cards",
+    "refresh_minutes": 60
+  },
+  "reply": { "text": "https://example.com/card/{name} (series {series})", "only_when_random": false },
+  "gif_as": "animation"
+}

@@ -1,0 +1,9 @@
+{
+  "bots": ["mybot.json", "myotherbot.json"],
+  "interval_seconds": 60,
+  "stuck_checks": 3,
+  "restart_cooldown_seconds": 600,
+  "alert_repeat_seconds": 1800,
+  "pm2": true,
+  "alert": { "token_env": "MYBOT_TOKEN", "chat_id_env": "CARDBOT_ALERT_CHAT_ID" }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cardbot",
+  "version": "0.1.0",
+  "description": "Telegram bot that serves trading-card images on demand. One codebase, any collection: point it at a folder of images or a card-directory API.",
+  "type": "module",
+  "bin": {
+    "cardbot": "bin/cardbot.js"
+  },
+  "scripts": {
+    "start": "node bin/cardbot.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "grammy": "^1.46.0",
+    "mysql2": "^3.24.3"
+  },
+  "license": "MIT",
+  "author": "J-Dog <j-dog@j-dog.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdogresorg/cardbot"
+  }
+}
